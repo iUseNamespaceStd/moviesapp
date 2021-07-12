@@ -46,22 +46,36 @@ body {
     right: 15px;
 }
 
+.main {
+    width: 98%;
+}
 .content {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    padding: 20px 20px;
+    /* justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; */
 }
 
 .card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 50%;
-    background-color: #c4c4c4;
+    display: flex;
+    background-color: #ececec;
     margin: 20px 0;
 }
 
 .movie-img {
-    width: 500px;
+    width: 400px;
+}
+
+.movie-name {
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+}
+
+.movie-info {
+    margin-left: 20px;
 }

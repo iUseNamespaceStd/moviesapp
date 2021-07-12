@@ -38,7 +38,17 @@ function buildMovie(movie) {
         if (movie['Images'] && movie['Images'].length > 0) {
             str += ("<img class='movie-img' src='" + movie['Images'][0] + "'>"); 
         }
-        str += ("<div>" + movie['Title'] + "</div>")
+        str += ("<div class='wrapper'>" + 
+        "<h2 class='movie-name'>" + movie['Title'] + "</h2>" +
+        "<div class='movie-info'>" + "Year: " + movie['Year'] + "</div>" +
+        "<div class='movie-info'>" + "Rated: " + movie['Rated'] + "</div>" +
+        "<div class='movie-info'>" + "Released: " + movie['Released'] + "</div>" +
+        "<div class='movie-info'>" + "Runtime: " + movie['Runtime'] + "</div>" +
+        "<div class='movie-info'>" + "Genre: " + movie['Genre'] + "</div>" +
+        "<div class='movie-info'>" + "Director: " + movie['Director'] + "</div>" +
+        "<div class='movie-info'>" + "Writer: " + movie['Writer'] + "</div>" +
+        "<div class='movie-info'>" + "Actors: " + movie['Actors'] + "</div>" +
+        "</div>");
     }
     // Define end of div element
     str += "</div>";
